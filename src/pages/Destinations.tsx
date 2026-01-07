@@ -100,18 +100,18 @@ const Destinations = () => {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 md:py-20 hero-gradient">
+        <section className="py-16 md:py-20 bg-yellow-400">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-center text-primary-foreground"
+              className="text-center"
             >
-              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-primary-foreground">
+              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-blue-600">
                 Explore Destinations
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8">
+              <p className="text-lg md:text-xl text-blue-600/80 max-w-2xl mx-auto mb-8">
                 Discover amazing places through the eyes of fellow travelers. Find your next adventure.
               </p>
 
