@@ -30,22 +30,16 @@ const Header = () => {
   }, [location]);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-card/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Plane className="w-5 h-5 text-primary-foreground" />
+            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Plane className="w-5 h-5 text-white" />
             </div>
-            <span className="font-display text-xl md:text-2xl font-bold text-foreground">
-              Travel<span className="text-accent">Voice</span>
+            <span className="font-display text-xl md:text-2xl font-bold text-white">
+              Travel<span className="text-amber-300">Voice</span>
             </span>
           </Link>
 
@@ -57,8 +51,8 @@ const Header = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-lg font-medium transition-all ${
                   location.pathname === link.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-muted"
+                    ? "bg-white/20 text-white"
+                    : "text-white/90 hover:bg-white/10 hover:text-white"
                 }`}
               >
                 {link.name}
@@ -68,7 +62,7 @@ const Header = () => {
 
           {/* Admin Button (Desktop) */}
           <Link to="/admin" className="hidden md:block">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Button variant="outline" className="border-white/30 text-white hover:bg-white/20 hover:text-white">
               Admin Dashboard
             </Button>
           </Link>
@@ -76,7 +70,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -91,7 +85,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-card border-t border-border"
+            className="md:hidden bg-primary border-t border-white/20"
           >
             <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
               {navLinks.map((link) => (
@@ -100,15 +94,15 @@ const Header = () => {
                   to={link.path}
                   className={`px-4 py-3 rounded-lg font-medium transition-all ${
                     location.pathname === link.path
-                      ? "bg-primary text-primary-foreground"
-                      : "text-foreground hover:bg-muted"
+                      ? "bg-white/20 text-white"
+                      : "text-white/90 hover:bg-white/10"
                   }`}
                 >
                   {link.name}
                 </Link>
               ))}
               <Link to="/admin">
-                <Button variant="outline" className="w-full mt-2 border-primary text-primary">
+                <Button variant="outline" className="w-full mt-2 border-white/30 text-white hover:bg-white/20">
                   Admin Dashboard
                 </Button>
               </Link>

@@ -108,7 +108,7 @@ const Destinations = () => {
               transition={{ duration: 0.5 }}
               className="text-center text-primary-foreground"
             >
-              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-foreground">
                 Explore Destinations
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8">
