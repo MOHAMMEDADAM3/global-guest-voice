@@ -70,15 +70,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm">
                 <MapPin size={18} className="text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-primary-foreground/80">123 Travel Street, Adventure City, World 12345</span>
+                <span className="text-primary-foreground/80">Address</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone size={18} className="text-accent flex-shrink-0" />
-                <span className="text-primary-foreground/80">+91 86399 75852</span>
+                <span className="text-primary-foreground/80">Phone</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Mail size={18} className="text-accent flex-shrink-0" />
-                <span className="text-primary-foreground/80">hello@travelvoice.com</span>
+                <span className="text-primary-foreground/80">Email</span>
               </li>
             </ul>
           </div>
