@@ -25,26 +25,18 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "hello@travelvoice.com",
-    description: "Send us an email anytime",
   },
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 86399 75852",
-    description: "Mon-Fri, 9am-6pm IST",
   },
   {
     icon: MapPin,
     title: "Address",
-    value: "123 Travel Street",
-    description: "Adventure City, World 12345",
   },
   {
     icon: Clock,
     title: "Response Time",
-    value: "Within 24 hours",
-    description: "We'll get back to you soon",
   },
 ];
 
@@ -196,8 +188,6 @@ const Contact = () => {
                         </div>
                         <div>
                           <h3 className="font-semibold text-foreground">{info.title}</h3>
-                          <p className="text-foreground font-medium">{info.value}</p>
-                          <p className="text-sm text-muted-foreground">{info.description}</p>
                         </div>
                       </CardContent>
                     </Card>
