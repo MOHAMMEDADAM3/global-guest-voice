@@ -40,7 +40,7 @@ const HeroSection = () => {
                 </Button>
               </Link>
               <Link to="/destinations">
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-white hover:bg-primary-foreground/10">
                   Explore Destinations
                 </Button>
               </Link>
